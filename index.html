@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#06101e">
+  <meta name="description" content="SAFAR SHERZAD — پلاتفۆرمێک بۆ کڕین، تەکنەلۆژیا، خزمەتگوزاری و زیرەکی دەستکرد.">
+  <title>SAFAR SHERZAD | پلاتفۆرمی هەموو شتێک</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">🚀 بەخێربێن بۆ SAFAR SHERZAD — پلاتفۆرمی هەموو شتێک</div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SAFAR SHERZAD سەرەکی">
+      <span class="brand-mark">S</span><span><strong>SAFAR <b>SHERZAD</b></strong><small>ALL IN ONE PLATFORM</small></span>
+    </a>
+    <label class="search"><span>⌕</span><input id="searchInput" placeholder="گەڕان بۆ بەرهەم، خزمەتگوزاری یان بابەت..." autocomplete="off"><kbd>Enter</kbd></label>
+    <div class="head-actions">
+      <button class="icon-btn" id="wishlistJump" aria-label="دڵخوازەکان">♡ <small>دڵخواز</small></button>
+      <button class="icon-btn" id="cartJump" aria-label="سەبەتە">🛒 <span class="count" id="cartCount">0</span><small>سەبەتە</small></button>
+      <button class="primary small" id="accountBtn">هەژمارم</button>
+    </div>
+  </header>
+  <nav class="nav">
+    <button class="nav-item active" data-category="هەموو">⌂ سەرەکی</button>
+    <button class="nav-item" data-category="مۆبایل و تابلێت">▣ مۆبایل و تابلێت</button>
+    <button class="nav-item" data-category="کۆمپیوتەر و لەپتۆپ">▱ کۆمپیوتەر و لەپتۆپ</button>
+    <button class="nav-item" data-category="یاری">🎮 یاری</button>
+    <button class="nav-item" data-category="تەکنەلۆژیای ماڵ">▤ تەکنەلۆژیای ماڵ</button>
+    <button class="nav-item" data-category="جل و بەرگ">♧ جل و بەرگ</button>
+    <button class="nav-item" data-category="خزمەتگوزاری">⚙ خزمەتگوزاری</button>
+    <button class="nav-item" data-category="AI و ڕیکلام">✦ AI و ڕیکلام</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> یەک پلاتفۆرم، بێ سنوور</span>
+        <h1>SAFAR <em>SHERZAD</em></h1>
+        <h2>ALL IN ONE PLATFORM</h2>
+        <p>فرۆشگا، تەکنەلۆژیا، یاری، خزمەتگوزاری دیجیتاڵ و ئامرازەکانی AI ـت هەمووی لە یەک شوێن.</p>
+        <div class="hero-actions"><button class="primary" id="shopNow">بەرهەمەکان ببینە <span>←</span></button><button class="secondary" id="servicesJump">خزمەتگوزارییەکان</button></div>
+        <div class="trust-row"><span>🚚 گەیاندنی ڕێکخراو</span><span>🛡️ کڕینی دڵنیاتر</span><span>🎧 پشتگیری بەکارهێنەر</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="وێنەی تەکنەلۆژیا و ئامێرە نوێکان">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="device device-laptop"><div class="screen"><span>SS</span><b>SMARTER<br>SHOPPING</b></div></div>
+        <div class="device device-phone"><div class="phone-screen"><span>✦</span><small>SAFAR AI</small></div></div>
+        <div class="device device-console"><div class="console-line"></div></div>
+        <div class="float-card"><span class="spark">✦</span><div><b>هەموو شتێک</b><small>لە یەک پلاتفۆرم</small></div></div>
+      </div>
+    </section>
+
+    <section class="service-strip" id="services">
+      <article><span class="service-icon">🛍️</span><div><b>فرۆشگای ئۆنلاین</b><small>بەرهەمەکان بگەڕێ و هەڵیبژێرە</small></div></article>
+      <article><span class="service-icon">✦</span><div><b>یاریدەدەری AI</b><small>یارمەتی بۆ بیرۆکە و ناوەڕۆک</small></div></article>
+      <article><span class="service-icon">📣</span><div><b>ستۆدیۆی ڕیکلام</b><small>پلانی بانگەشە بۆ بازرگانی</small></div></article>
+      <article><span class="service-icon">🎧</span><div><b>پشتگیری</b><small>ڕێنمایی و پەیوەندی</small></div></article>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head"><div><span class="eyebrow">هەڵبژاردەی تایبەت</span><h2>بەرهەمە نوێکان</h2></div><span class="muted" id="resultCount">٦ بەرهەم</span></div>
+      <div class="chips" id="chips">
+        <button class="chip selected" data-category="هەموو">هەموویان</button>
+        <button class="chip" data-category="مۆبایل و تابلێت">مۆبایل</button>
+        <button class="chip" data-category="کۆمپیوتەر و لەپتۆپ">لەپتۆپ</button>
+        <button class="chip" data-category="یاری">یاری</button>
+        <button class="chip" data-category="تەکنەلۆژیای ماڵ">ئامێری زیرەک</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty hidden" id="emptyState"><span>⌕</span><h3>هیچ بەرهەمێک نەدۆزرایەوە</h3><p>وشەیەکی تر بنووسە یان پۆلێکی تر هەڵبژێرە.</p><button class="secondary" id="resetSearch">گەڕانەوە بۆ هەموو بەرهەمەکان</button></div>
+    </section>
+
+    <section class="promo-grid">
+      <article class="promo promo-blue"><div><span>بۆ کڕینی زیرەک</span><h3>تەکنەلۆژیای نوێ</h3><p>ئامێرەکانت بە ئاسانی هەڵبژێرە.</p><button class="light-btn" data-category="مۆبایل و تابلێت">بینین ←</button></div><div class="promo-shape">▱</div></article>
+      <article class="promo promo-purple"><div><span>کاتێک یاری دەکەیت</span><h3>جیهانی یاری</h3><p>ئامێر و کەرەستەی یاری.</p><button class="light-btn" data-category="یاری">بینین ←</button></div><div class="promo-shape">🎮</div></article>
+      <article class="promo promo-orange"><div><span>بۆ کار و خوێندن</span><h3>هێزی لەپتۆپ</h3><p>ئامێر بۆ کارەکانی ڕۆژانە.</p><button class="light-btn" data-category="کۆمپیوتەر و لەپتۆپ">بینین ←</button></div><div class="promo-shape">▰</div></article>
+    </section>
+
+    <section class="section feature-section">
+      <div class="section-head"><div><span class="eyebrow">خزمەتگوزارییە دیجیتاڵییەکان</span><h2>لە بیرۆکەوە بۆ ئەنجام</h2></div></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span>✦</span><h3>یاریدەدەری AI</h3><p>یارمەتی لە نووسین، ڕێکخستنی بیرۆکە و دروستکردنی ناوەڕۆک.</p><button class="text-btn" data-service="یاریدەدەری AI">داوای زانیاری ←</button></article>
+        <article class="feature-card"><span>▧</span><h3>دیزاینی ڕیکلام</h3><p>پلانی ڕیکلام و پێشنیاری ناوەڕۆک بۆ براند و فرۆشگا.</p><button class="text-btn" data-service="دیزاینی ڕیکلام">داوای زانیاری ←</button></article>
+        <article class="feature-card"><span>⌘</span><h3>دروستکردنی وێبسایت</h3><p>دیزاین و پلان بۆ وێبسایت و پڕۆژەی دیجیتاڵ.</p><button class="text-btn" data-service="دروستکردنی وێبسایت">داوای زانیاری ←</button></article>
+      </div>
+    </section>
+    <section class="newsletter"><div><span class="eyebrow">لە نوێکارییەکان ئاگادار بە</span><h2>هەواڵ و ئۆفەری نوێ بزانە</h2><p>ئیمەیڵەکەت بنووسە بۆ تۆمارکردنی ناوت لە لیستی هەواڵ.</p></div><form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="example@email.com" required><button class="primary">تۆمارکردن</button></form></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">S</span><span><strong>SAFAR <b>SHERZAD</b></strong><small>ALL IN ONE PLATFORM</small></span></a><p>پلاتفۆرمێک بۆ کڕین، تەکنەلۆژیا و خزمەتگوزارییە دیجیتاڵییەکان.</p><div class="footer-links"><a href="#products">بەرهەمەکان</a><a href="#services">خزمەتگوزاری</a><a href="mailto:hello@safar-sherzad.example">پەیوەندی</a></div><small class="copyright">© 2026 SAFAR SHERZAD. هەموو مافەکان پارێزراون.</small></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="overlay hidden" id="overlay">
+    <section class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <div class="drawer-head"><h2 id="drawerTitle">سەبەتەی کڕین</h2><button class="close-btn" id="closeDrawer" aria-label="داخستن">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-bottom"><div class="total-row"><span>کۆی گشتی</span><strong id="cartTotal">0 د.ع</strong></div><p class="muted">پارەدان لە وەشانی دیمۆدا چالاک نییە.</p><button class="primary full" id="checkoutBtn">داواکاری دیمۆ</button></div>
+    </section>
+  </div>
+  <div class="modal-overlay hidden" id="modalOverlay"><section class="modal" role="dialog" aria-modal="true"><button class="close-btn modal-close" id="closeModal">×</button><div id="modalContent"></div></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
